@@ -17,6 +17,7 @@ export const routes = [
   { path: '/lazyloadtest', component: () => import('@/views/LazyLoadTest.vue') },
   { path: '/publishpackage', component: () => import('@/views/PublishPackageToNpm.vue') },
   { path: '/vueplugintest', component: () => import('@/views/VuePluginTest.vue') },
+  { path: '/hookstest', component: () => import('@/views/HooksTest.vue') },
 ]
 
 export const router = createRouter({
