@@ -5,18 +5,18 @@
   </div>
   <div>
     <h4>base64编码</h4>
-    <p style="word-wrap: break-word">{{ base64.baseUrl }}</p>
+    <p style="word-wrap: break-word">{{ base64 }}</p>
   </div>
 </template>
 
 <script setup lang="ts">
-import useBase64 from '../hooks/index.ts'
+import useBase64 from '@/hooks'
 import { ref } from 'vue'
 const base64 = ref<string>('')
 useBase64({
   el: '#img',
 }).then((res) => {
-  base64.value = res
+  base64.value = res.baseUrl
 })
 </script>
 
